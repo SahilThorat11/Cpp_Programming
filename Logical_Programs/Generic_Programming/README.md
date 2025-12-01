@@ -33,47 +33,7 @@ This section contains programs that illustrate:
         Cpp Programming/
             └── logical programs/
                     └── generic programming/
-
-----------------------------------------------------------------------------------------------------------------------------------
-
-🚀 What You Will Learn :
-
-----------------------------------------------------------------------------------------------------------------------------------
-
-        ✔ Template Basics
-
-        Function templates
-
-        Class templates
-
-        Template parameters & deduction
-
-        ✔ Advanced Generic Programming
-
-        SFINAE basics
-
-        Type traits (<type_traits>)
-
-        if constexpr compile-time logic
-
-        ✔ C++20 Concepts
-
-        Creating custom concepts
-
-        Restricting templates for better error messages
-
-        Cleaner, safer generic APIs
-
-        ✔ Practical Logical Programs
-
-        Generic max/min
-
-        Generic sorting logic
-
-        Generic arithmetic
-
-        Type-independent utility functions
-
+                    
 ----------------------------------------------------------------------------------------------------------------------------------
 
 🧪 How to Compile & Run
