@@ -27,20 +27,18 @@ These examples help build strong C++ fundamentals while showcasing modern generi
 
 📁 Folder Structure
 Cpp Programming/
+
 └── logical programs/
+
     └── generic programming/
-        ├── examples/        # Demonstrations of generic functions & classes
-        ├── templates/       # Template-based algorithms & utilities
-        ├── concepts/        # C++20 concept examples
-        ├── type_traits/     # Custom traits and compile-time checks
-        └── README.md        # This file
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
 You can rename or restructure based on your project needs.
 
-🚀 What You Will Learn
+🚀 What You Will Learn :
+
 ✔ Template Basics
 
 Function templates
@@ -97,4 +95,4 @@ C++17 minimum
 
 C++20 recommended for concepts and advanced features
 
-GNU g++, Clang++, or MSVC
+GNU g++
