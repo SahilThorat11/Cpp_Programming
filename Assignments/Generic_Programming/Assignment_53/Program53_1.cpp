@@ -16,6 +16,11 @@ class Array
             Arr = new T[iSize];
         }
 
+        ~Array()
+        {
+            delete[] Arr;
+        }
+
         void Accept()
         {
             int iCnt = 0;
@@ -58,17 +63,20 @@ int main()
     cout << "Enter number of elements that you want to Enter : \n"; 
     cin >> iValue;
 
-    Array<int> aobj1(iValue);
-    Array<int> aobj2(iValue);
+    Array<int>* Src = new Array<int>(iValue);
+    Array<int>* Dest = new Array<int>(iValue);
 
-    aobj1.Accept();
-    aobj1.CopyArray(aobj2);
+    Src->Accept();
+    Src->CopyArray(*Dest);
 
     cout << "Source Array elements are:\n";
-    aobj1.Display();
+    Src->Display();
 
     cout << "Destination Array elements are:\n";
-    aobj2.Display();
+    Dest->Display();
+
+    delete Src;
+    delete Dest;
 
     return 0;
 }
