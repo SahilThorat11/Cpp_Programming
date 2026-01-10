@@ -73,14 +73,16 @@ int main()
     cout << "Enter number of elements that you want to enter: "; 
     cin >> iValue;
 
-    Array<int> aobj(iValue);
+    Array<int> *aobj = new Array<int>(iValue);
 
-    aobj.Accept();
-    aobj.Display();
+    aobj->Accept();
+    aobj->Display();
 
-    iRet = aobj.SecondMax();
+    iRet = aobj->SecondMax();
 
     cout << "Second Maximum number from the array is : " << iRet << "\n";
+
+    delete aobj;
 
     return 0;
 }
