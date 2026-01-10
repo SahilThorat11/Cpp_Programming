@@ -42,20 +42,12 @@ class Array
 
         void Replace(T oldValue, T newValue)
         {
-            bool found = false;
-
             for(int iCnt = 0; iCnt < iSize; iCnt++)
             {
                 if(Arr[iCnt] == oldValue)
                 {
                     Arr[iCnt] = newValue;
-                    found = true;
                 }
-            }
-
-            if(!found)
-            {
-                cout << "Value not found in the array\n";
             }
         }
 
