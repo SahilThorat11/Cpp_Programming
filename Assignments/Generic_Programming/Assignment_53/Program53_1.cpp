@@ -16,11 +16,6 @@ class Array
             Arr = new T[iSize];
         }
 
-        ~Array()
-        {
-            delete[] Arr;
-        }
-
         void Accept()
         {
             int iCnt = 0;
