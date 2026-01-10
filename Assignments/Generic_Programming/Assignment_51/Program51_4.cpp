@@ -3,7 +3,7 @@ using namespace std;
 
 template<class T>
 
-int SearchFirst(T *Arr, int iSize, T No)
+int SearchLast(T *Arr, int iSize, T No)
 {
     int iCnt = 0, iCount = 0;
     
@@ -22,7 +22,7 @@ int SearchFirst(T *Arr, int iSize, T No)
 int main()
 {
     int Arr[] = {10,20,30,10,30,40,10,40,10};
-    int iRet = SearchFirst(Arr,9,40);
+    int iRet = SearchLast(Arr,9,40);
 
     if(iRet == -1)
     {
