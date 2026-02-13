@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+bool CheckPerfect(int iNo)
+{
+   static int iCnt = 1;
+   static int iSum = 0;
+
+   if(iCnt <= (iNo / 2))
+   {
+        if(iNo % iCnt == 0)
+        {
+            iSum = iSum + iCnt;
+        }
+        iCnt++;
+
+        CheckPerfect(iNo);
+   }
+
+   return (iSum == iNo);
+}
+
+int main()
+{
+    int iValue = 0;
+    bool bRet  = 0;
+
+    cout << "Enter the number : \n";
+    cin >> iValue;
+
+    bRet = CheckPerfect(iValue);
+
+    if(bRet == true)
+    {
+        cout << "Given number is perfect.\n";
+    }
+    else
+    {
+        cout << "Given number is Not perfect.\n";
+    }
+
+    return 0;
+}
